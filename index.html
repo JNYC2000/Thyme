@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshPlate – Meal Planning & Recipes</title>
+    <title>Fresh Outta Thyme</title> <!-- Updated title -->
     <style>
         body {
             margin: 0;
@@ -61,6 +61,11 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .recipe-card:hover {
+            transform: scale(1.02);
         }
 
         .recipe-card img {
@@ -79,7 +84,7 @@
 <body>
 
 <header>
-    <h2>FreshPlate</h2>
+    <h2>Fresh Outta Thyme</h2> <!-- Updated header title -->
     <nav>
         <a href="#">Home</a>
         <a href="#">Recipes</a>
@@ -96,10 +101,12 @@
 <section class="section">
     <h2>Featured Recipes</h2>
     <div class="recipes">
-        <div class="recipe-card">
-            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Recipe">
-            <h3>Summer Veggie Pasta</h3>
-        </div>
+
+        <!-- ✅ Updated first recipe card to Lobster Roll -->
+        <a href="lobster-roll.html" class="recipe-card">
+            <img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba" alt="Lobster Roll">
+            <h3>Lobster Roll</h3>
+        </a>
 
         <div class="recipe-card">
             <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" alt="Recipe">
@@ -110,6 +117,7 @@
             <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19" alt="Recipe">
             <h3>Berry Smoothie Bowl</h3>
         </div>
+
     </div>
 </section>
 
